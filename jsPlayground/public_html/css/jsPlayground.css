@@ -1,0 +1,119 @@
+﻿html, body {
+    position:relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#container {
+    position:relative;
+    height:100%;
+    width:100%;
+    background-color: black;
+}
+#header {
+    position:relative;
+    height:40px;
+    width: 100%;
+    background-color: lightsteelblue;
+    overflow:hidden;
+    text-align: center;  /*this centers inline children elements*/
+    vertical-align: middle;
+}
+#header span{
+    line-height: 40px;   /*set height to height of header to center*/
+    font-size: x-large;
+}
+#menu {
+    position:relative;
+    height:25px;
+    width:100%;
+    color: white;
+    background-color: #002240; 
+    border-bottom: thin solid white;
+    line-height:25px;
+}
+#menu span{
+    margin-left: 25px;
+}
+#content {
+    position:absolute;
+    top:66px;
+    bottom:20px;
+    width:100%;
+    overflow:hidden;
+}
+
+#codeBar {
+    position:absolute;
+    bottom:0;
+    background-color: #002240;
+    color: #d0d0d0;
+    width:100%;
+    height:30px;
+    border-top: thin solid white;
+    border-bottom: thin solid white;
+    line-height: 30px;  /* this will center contents */
+    overflow:hidden;
+}
+#codeBar span{
+    margin-left:25px;
+}
+
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:20px;
+    overflow:hidden;
+}
+#codeSet {
+    position:absolute;
+    background-color: yellow;
+    z-index: 1;
+    width:100%;
+    top:0px;
+    bottom: 32px;
+}
+#code {
+    float:left;
+    background-color: bisque;
+    height:100%;
+    width:60%;
+}
+#output {
+    background-color: orange;
+    height:100%;
+    width:40%;
+    overflow:hidden;
+}
+
+#editor, #editorOutput{
+    margin:0;
+    padding:0;
+    position:relative;
+    width:100%;
+    height:100%;
+    overflow:auto;
+}
+#editorOutput {
+    background-color:black;
+    color:khaki;
+    border:none;
+    border-width:0;
+    font-family:Consolas, monospace;
+    font-size:small;
+    resize:none;
+    outline:none;
+}
+#footer p{
+    position:relative;
+    top:0;
+    margin: 0;
+    color: #d0d0d0;
+    text-align: right;
+    font-size: smaller;
+}
+
+#fileChooser {
+    display:none;
+}

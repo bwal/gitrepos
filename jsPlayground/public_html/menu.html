@@ -1,0 +1,68 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="js/libs/jquery-1.9.0/jquery.min.js"></script> 
+        <link rel="stylesheet" type="text/css" href="css/menu.css"/> 
+        <script type="text/javascript">
+    function tabSwitch_2(active, number, tab_prefix, content_prefix) {  
+          
+        for (var i=1; i < number+1; i++) {  
+          document.getElementById(content_prefix+i).style.display = 'none';  
+          document.getElementById(tab_prefix+i).className = '';  
+        }  
+        document.getElementById(content_prefix+active).style.display = 'block';  
+        document.getElementById(tab_prefix+active).className = 'active';      
+          
+    }  
+        </script>
+    </head>
+    <body>
+        <div id="tabbed_box_1" class="tabbed_box">  
+            <h4>Browse Site <small>Select a Tab</small></h4>  
+            <div class="tabbed_area">  
+
+                <ul class="tabs">  
+                    <li><a href="javascript:tabSwitch_2(1, 3, 'tab_', 'content_');" id="tab_1" class="active">Topics</a></li>  
+                    <li><a href="javascript:tabSwitch_2(2, 3, 'tab_', 'content_');" id="tab_2">Archives</a></li>  
+                    <li><a href="javascript:tabSwitch_2(3, 3, 'tab_', 'content_');" id="tab_3">Pages</a></li>  
+                </ul>  
+                <div id="content_1" class="content">  
+                    <ul>  
+                        <li><a href="">HTML Techniques <small>4 Posts</small></a></li>  
+                        <li><a href="">CSS Styling <small>32 Posts</small></a></li>  
+                        <li><a href="">Flash Tutorials <small>2 Posts</small></a></li>  
+                        <li><a href="">Web Miscellanea <small>19 Posts</small></a></li>  
+                        <li><a href="">Site News <small>6 Posts</small></a></li>  
+                        <li><a href="">Web Development <small>8 Posts</small></a></li>  
+                    </ul>  
+                </div>  
+                <div id="content_2" class="content">  
+                    <ul>  
+                        <li><a href="">December 2008 <small>6 Posts</small></a></li>  
+                        <li><a href="">November 2008 <small>4 Posts</small></a></li>  
+                        <li><a href="">October 2008 <small>22 Posts</small></a></li>  
+                        <li><a href="">September 2008 <small>12 Posts</small></a></li>  
+                        <li><a href="">August 2008 <small>3 Posts</small></a></li>  
+                        <li><a href="">July 2008 <small>1 Posts</small></a></li>  
+                    </ul>  
+                </div>  
+                <div id="content_3" class="content">  
+                    <ul>  
+                        <li><a href="">Home</a></li>  
+                        <li><a href="">About</a></li>  
+                        <li><a href="">Contribute</a></li>  
+                        <li><a href="">Contact</a></li>  
+                    </ul>  
+                </div>  
+
+            </div>  
+
+        </div>  
+    </body>
+</html>

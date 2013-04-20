@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Sandbox</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="description" content="JavaScript code sandbox with code editor and output window.">
+    <meta name="keywords" content="javascript, code, editor">
+    <script src="js/libs/CodeMirror/codemirror.js"></script>
+    <script src="js/libs/CodeMirror/matchbrackets.js"></script>
+    <script src="js/libs/CodeMirror/show-hint.js"></script>
+    <script src="js/libs/CodeMirror/javascript-hint.js"></script>
+    <script src="js/libs/CodeMirror/javascript.js"></script>
+    <script src="js/libs/jquery-1.9.0/jquery.min.js"></script> 
+    <script src="js/libs/jqueryui-1.10.0/jquery-ui.min.js"></script>
+    <script src="js/file.js"></script>
+    <script src="js/environment.js"></script>
+    <script src="js/jsPlayground.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="css/show-hint.css" />
+    <link rel="stylesheet" type="text/css" href="css/jsPlayground.css" />
+    <link rel="stylesheet" type="text/css" href="css/vibrant-ink.css" />
+    <link rel="stylesheet" type="text/css" href="css/ambiance.css" />
+
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <span>JavaScript <img src="img/favicon.ico"> Playground</span>
+        </div>
+        <div id="menu">
+            <span>Placeholder for a fantastic menu!! &#9786</span>
+        </div>
+        <div id="content">
+            <div id="codeSet">
+                <div id="code">
+                    <textarea name="editor" id="editor"></textarea>
+                </div>
+                <div id="output">
+                    <textarea name="editorOutput" id="editorOutput" readonly></textarea>
+                </div>
+            </div>
+            <div id="codeBar">
+                <span>
+<!--                <label for="themeSelector">Theme:</label>  
+                <select id=themeSelector>
+                    <option>default</option>
+                    <option>ambiance</option>
+                    <option selected>vibrant-ink</option>
+                </select>-->
+                <button id="btnRun">Run</button>
+                <button id="btnSave">Save</button>
+                <button id="btnLoad">Load</button>
+                <button id="btnClear">Clear</button>
+                <input type="file" id="fileChooser"/>
+                </span>
+            </div>
+        </div>
+        <div id="footer">
+            <p>A JavaScript playground by bwal &copy;2013.</p>
+        </div>
+    </div>
+</body>
+</html>
