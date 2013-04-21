@@ -17,11 +17,13 @@
     background-color: lightsteelblue;
     overflow:hidden;
     text-align: center;  /*this centers inline children elements*/
-    vertical-align: middle;
 }
 #header span{
-    line-height: 40px;   /*set height to height of header to center*/
     font-size: x-large;
+    vertical-align: 20%;
+}
+#header img{
+    margin-top:4px;
 }
 #menu {
     position:relative;
@@ -101,7 +103,7 @@
     border:none;
     border-width:0;
     font-family:Consolas, monospace;
-    font-size:small;
+    font-size:medium;
     resize:none;
     outline:none;
 }
